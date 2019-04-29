@@ -28,3 +28,11 @@
   border: 0.1rem solid $color-white;
   cursor: pointer;
 }
+
+.header__menu-link {
+  color: $color-white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 1.5rem;
+  display: block;
+}
