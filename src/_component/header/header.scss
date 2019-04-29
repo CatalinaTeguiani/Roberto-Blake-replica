@@ -35,4 +35,25 @@
   text-decoration: none;
   padding: 1.5rem;
   display: block;
+
+
+  &:first-child {
+    &:after {
+      font-family: 'roberto-blake-custom-font'!important;
+      content: "\e902";
+      font-size: 2rem;
+    }
+  }
+}
+
+.header__menu-list {
+  display: none;
+}
+
+#toggle-top-menu {
+  display: none;
+}
+
+#toggle-top-menu:checked + .header__menu-list {
+  display: inherit;
 }
