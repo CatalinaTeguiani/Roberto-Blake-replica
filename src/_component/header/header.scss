@@ -19,7 +19,12 @@
 }
 .rbcf-menu {
   font-size: 2.5rem;
-  padding: 1.5rem;
+  padding: 0.5rem;
+  margin: 0.8rem;
+  border-radius: 0.3rem;
+  border: 0.1rem solid $color-white;
+  cursor:pointer;
+
 }
 .header__menu-link,
 .header__menu-sub-link {
@@ -49,6 +54,7 @@
           font-family: 'roberto-blake-custom-font';
           content: "\e902";
           font-size: 2rem;
+          padding: 0 1.5rem;
       }
   }
 }
@@ -75,3 +81,9 @@
 .rbcf-circle-down {
   padding: 0 1rem;
 }
+
+// .header__top {
+//   position: fixed;
+//   left:0;
+//   right: 0;
+// }
