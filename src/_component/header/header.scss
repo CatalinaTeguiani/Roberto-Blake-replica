@@ -3,14 +3,17 @@
   color: $color-white;
 }
 .header__top {
-  display: flex;
   height: 52px;
-  // line-height: 52px;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   border: 0.1rem solid $color-mercury;
-  position: relative;
   background-color: $color-mine-shaft;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 .header__name {
   font-size: 2rem;
@@ -19,8 +22,8 @@
 }
 .rbcf-menu {
   font-size: 2.5rem;
-  padding: 0.5rem;
-  margin: 0.8rem;
+  padding: 0.3rem;
+  margin-right: 0.8rem;
   border-radius: 0.3rem;
   border: 0.1rem solid $color-white;
   cursor:pointer;
@@ -31,26 +34,33 @@
   color: $color-white;
   font-size: 1.5rem;
   text-decoration: none;
-  padding: 0.75rem 1.5rem;
+  padding: 0.6rem 1.5rem;
   display: block;
   cursor: pointer;
 }
 .header__menu-sub-link {
   padding: 0.5rem 2.5rem;
 }
+
+
+
 .header__menu-list {
+  
   // display: none;
-  transition: 0.35s;
-  position: fixed;
-  top: 5.2rem;
+  transition: 0.25s;
+  position: absolute;
+  top: -100%;
   left: 0;
   right: 0;
   border: 0.1rem solid $color-mercury;
+  padding: 0;
+  z-index: 1;
+  
 }
 .header__menu-item {
   background-color: $color-mine-shaft;
   &:first-child {
-      &:after {
+      & .header__menu-link:after {
           font-family: 'roberto-blake-custom-font';
           content: "\e902";
           font-size: 2rem;
@@ -64,10 +74,13 @@
 }
 #toggle-top-menu:checked + .header__menu-list {
   // display: inherit;
-  top: -100%;
+  top: 5.2rem;
+  padding: 0;
 }
 .header__sub-menu {
   display: none;
+  list-style: none;
+  padding-left: 1.5rem;
 }
 #header-sub-menu:checked + .header__menu-link + .header__sub-menu {
   display: inherit;
@@ -82,8 +95,55 @@
   padding: 0 1rem;
 }
 
-// .header__top {
-//   position: fixed;
-//   left:0;
-//   right: 0;
-// }
+.header__top {
+  position: fixed;
+  left:0;
+  right: 0;
+}
+
+.header__footer {
+  background-color: $color-mine-shaft;
+  color: $color-white;
+  text-align: center;
+  padding: 1.5rem;
+
+  h2 {
+    font-size: 2.4rem;
+    font-weight: normal;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+}
+
+
+.header__wrapper {
+  background-color: $color-pizazz;
+
+  h1 {
+    color: $color-white;
+    font-size: 3.6rem;
+    font-weight: normal;
+    padding: 1rem 1.5rem;
+    text-align: center;
+  }
+}
+
+.header__body {
+  background-image: url('asset/image/robertoblake2016header.jpg');
+  height: 61.1rem;
+  background-position: center center;
+  background-size: cover;
+}
+
+.header__download {
+  border: 0.1rem solid $color-fuel-yellow;
+  background-color: $color-sandy-brown;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: normal;
+  color: $color-white;
+  border-radius: 0.5rem;
+  padding:1rem 1.5rem;
+  text-transform: uppercase;
+}
+
