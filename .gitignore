@@ -3,5 +3,5 @@ tmp
 build
 npm-debug.log*
 package-lock.json
-.vscode
 src/_font
+.publish
