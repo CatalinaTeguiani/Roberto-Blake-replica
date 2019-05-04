@@ -10,10 +10,10 @@
 
   .header__menu-item {
     list-style-type: none;
-    // position: relative;
+    position: relative;
 
     &:first-child .header__menu-link {
-      padding-top: 0.5rem;
+      padding-top: 0rem;
     }
   }
 
@@ -21,11 +21,11 @@
     display: none;
   }
 
-//   .header__sub-menu { 
-//     list-style-type: none;
-//     position: absolute;
-//     top: 4.4rem;
-//     left: 0;
-//     background-color: $color-mine-shaft;
-//   } 
+  .header__sub-menu { 
+    list-style-type: none;
+    position: absolute;
+    top: 4.4rem;
+    left: 0;
+    background-color: $color-mine-shaft;
+  } 
 }
