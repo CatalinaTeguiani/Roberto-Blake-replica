@@ -28,8 +28,6 @@ p {
   font-size: 1.6rem;
 }
 
-@import 'landing-content';
-
 a {
   color: $color-astral;
   text-decoration: none;
@@ -66,11 +64,11 @@ hr {
   }
 }
 
-.image {
+.image img {
   max-width: 100%;
 }
 
-.image-text__wrapper {
-  display: flex;
-  flex-direction: row;
-}
+// .image-text__wrapper {
+//   display: flex;
+//   flex-direction: row;
+// }
