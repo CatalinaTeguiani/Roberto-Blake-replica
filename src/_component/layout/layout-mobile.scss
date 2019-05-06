@@ -65,3 +65,12 @@ hr {
     // z-index: -1;
   }
 }
+
+.image {
+  max-width: 100%;
+}
+
+.image-text__wrapper {
+  display: flex;
+  flex-direction: row;
+}
