@@ -106,7 +106,7 @@
   background-color: $color-mine-shaft;
   color: $color-white;
   text-align: center;
-  padding: 1.5rem;
+  // padding: 1.5rem;
 
   h2 {
     font-size: 2.4rem;
@@ -147,5 +147,18 @@
 
 .header__body--training {
   background-image: url('/asset/image/robertoblake2016-marketing-header.jpg');
+  @extend %header__body;
+}
+
+.header__body--speaker {
+  background-image: url('/asset/image/robertoblake2016-speaker-header.jpg');
+  @extend %header__body;
+}
+.header__body--press {
+  background-image: url('/asset/image/robertoblake2016-press-header-2.jpg');
+  @extend %header__body;
+}
+.header__body--contact {
+  background-image: url('/asset/image/robertoblake2016-speaker-header.jpg');
   @extend %header__body;
 }
