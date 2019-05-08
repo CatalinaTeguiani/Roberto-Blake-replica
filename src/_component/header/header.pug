@@ -14,20 +14,20 @@ nav.header
                             li
                                 if dropdown.download
                                     a.header__menu-sub-link(
-                                    href=dropdown.href,
-                                    download,
-                                    target=dropdown.target
+                                        href=dropdown.href,
+                                        download,
+                                        target=dropdown.target
                                     )=dropdown.text
                                 else
-                                a.header__menu-link(
-                                    href=dropdown.href, 
-                                    target=dropdown.target
-                                    )=dropdown.text
-        else 
-        a.header__menu-link(
-            href=item.href,
-            target=item.target
-        )=item.text
+                                    a.header__menu-link(
+                                        href=dropdown.href, 
+                                        target=dropdown.target
+                                        )=dropdown.text
+                else 
+                    a.header__menu-link(
+                        href=item.href,
+                        target=item.target
+                    )=item.text
     .header__top
         span.header__name Roberto Blake
         label.rbcf-menu(for="toggle-top-menu" ) 
